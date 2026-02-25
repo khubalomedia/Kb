@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Balo TV - Shuffle Mode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Video styles.css">
+</head>
+<body>
+  <header>
+    <header>
+      <img src="balotv-logo-1.png" alt="Balo TV Logo">
+    </header>
+    <nav>
+      <a href="#channel1">Live Channel</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav>
+      <a href="Balo Content.html">&laquo; Balo Content</a>
+  </nav>
+
+    <section id="channel1" class="channel">
+      <h2 id="program-title">Current Show</h2>
+      <div class="video-container">
+        <iframe 
+          id="videoFrame"
+          width="100%" 
+          height="100%" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="bio">
+        <h3>About This Channel</h3>
+        <p>This is your 24-hour entertainment hub. Programming changes automatically depending on the time of day. Now with shuffled playlists for a live TV feel!</p>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Balo TV. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const programs = [
+      {
+        title: "Morning Cartoons",
+        startHour: 6,
+        endHour: 12,
+        playlist: "PL8W_paC7-AOuHLHtxjVGMRaeEVFdqpoix"
+      },
+      {
+        title: "Afternoon Education",
+        startHour: 12,
+        endHour: 18,
+        playlist: "PL8W_paC7-AOtTlt5kzJXexdirvM5HGIHf"
+      },
+      {
+        title: "Evening Music",
+        startHour: 18,
+        endHour: 24,
+        playlist: "PL8W_paC7-AOs-YVLrcN1rw_MhozUIoESZ"
+      },
+      {
+        title: "Late Night Chill",
+        startHour: 0,
+        endHour: 6,
+        playlist: "PL8W_paC7-AOvQSWZPc_uM4RyOHylSsYO_"
+      }
+    ];
+
+    function getCurrentProgram() {
+      const now = new Date();
+      const hour = now.getHours();
+      return programs.find(p => hour >= p.startHour && hour < p.endHour);
+    }
+
+    function loadProgram() {
+      const program = getCurrentProgram();
+      const iframe = document.getElementById("videoFrame");
+      const title = document.getElementById("program-title");
+
+      title.textContent = program.title;
+      iframe.src = `https://www.youtube.com/embed/videoseries?list=${program.playlist}&autoplay=1&loop=1&shuffle=1&mute=0`;
+    }
+
+    window.onload = loadProgram;
+  </script>
+</body>
+</html>
