@@ -1,46 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Balo Music Hub</title>
-<link rel="stylesheet" href="Balo Content style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khubalo Media</title>
+<link rel="stylesheet" href="Home.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header>Balo Content</header>
 
+<header>
+<div class="logo">Khubalo Media</div>
 
-<main>
-
-<h1>Find fun, educational, intertaining content online or downlouded to enjoy without internet connection</h1>
-
-<h4>Explore Categories:</h4>
-
-
-<ul class="categories">
-
-    <li><img src="Music Hub.png" alt="Cover" class="cover-art">
-        <h2>Music Downloud</h2>
-        <a href="Music Downloud.html"><h2>View Content</h2></a>
-    </li>
-
-<li>
-    <img src="Video.png" alt="Cover" class="cover-art">
-    <h2>Live TV</h2>
-    <a href="Live TV.html"><h2>View Content</h2></a>
-</li>
-
-<li><img src="Streaming.png" alt="Cover" class="cover-art">
-    <h2>Music Streaming</h2>
-    <a href="Stream.html"><h2>View Content</h2></a>
-</li>
-
-
-
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#live">Live TV</a></li>
+<li><a href="#stream">Music Streaming</a></li>
+<li><a href="Music Downloud.html">Music Download</a></li>
+<li><a href="#artists">Artists</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
+</nav>
+</header>
 
+<section class="hero" id="home">
+<h1>Khubalo Media</h1>
+<p>Music • Entertainment • Culture</p>
 
-</main>
-<footer><p>&copy; Balo Music Hub</p></footer>
+<div class="hero-buttons">
+<a href="#live">▶ Watch Live TV</a>
+<a href="#stream">🎵 Stream Music</a>
+<a href="Music Downloud.html">⬇ Download Music</a>
+</div>
+</section>
+
+<section class="services">
+
+<div class="card">
+<h3>Music Download</h3>
+<p>Download your favourite music from Khubalo Media and enjoy it offline anytime.</p>
+<button>Download Music</button>
+</div>
+
+<div class="card">
+<h3>Live TV</h3>
+<p>Watch Khubalo Media live content without searching. Just tune in and enjoy.</p>
+<button>Watch Live</button>
+</div>
+
+<div class="card">
+<h3>Music Streaming</h3>
+<p>Stream music directly from Khubalo Media anywhere.</p>
+<button>Start Streaming</button>
+</div>
+
+</section>
+
+<section id="stream" class="music-player">
+
+<h2>Music Streaming</h2>
+
+<audio controls>
+<source src="music/song1.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+</section>
+
+<section id="live" class="featured">
+
+<h2>Featured Videos</h2>
+
+<div class="videos">
+
+<iframe width="300" height="170"
+src="https://youtube.com/playlist?list=PL8W_paC7-AOs-YVLrcN1rw_MhozUIoESZ&si=nGP1_ISQWBwTWUM0">
+</iframe>
+
+<iframe width="300" height="170"
+src="https://youtube.com/playlist?list=PL8W_paC7-AOuHLHtxjVGMRaeEVFdqpoix&si=vItsbhapypMjadT6">
+</iframe>
+
+<iframe width="300" height="170"
+src="https://youtube.com/playlist?list=PL8W_paC7-AOtB9_UESNqBiBn3o4PpHT6o&si=sT8D1j-VQeM9I2Lq">
+</iframe>
+
+<iframe width="300" height="170"
+src="https://youtube.com/playlist?list=PL8W_paC7-AOtTlt5kzJXexdirvM5HGIHf&si=YwnMujCS82qIEZIn">
+</iframe>
+
+<iframe width="300" height="170"
+src="https://youtube.com/playlist?list=PL8W_paC7-AOvTL0ZF6iSiZhYxpjV1uVGD&si=gvtgcfe9CrdAkajj">
+</iframe>
+
+</div>
+
+</section>
+
+<section id="artists" class="artist-submission">
+
+<h2>Artist Submission</h2>
+
+<p>Are you an artist? Submit your music to Khubalo Media.</p>
+
+<form>
+
+<input type="text" placeholder="Artist Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Song Title">
+
+<input type="url" placeholder="Link to Song (Google Drive / YouTube)">
+
+<textarea placeholder="Tell us about yourself"></textarea>
+
+<button type="submit">Submit Music</button>
+
+</form>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Khubalo Media</h2>
+
+<p>WhatsApp: 081 235 7662</p>
+
+<p>Facebook: Khubalo Media</p>
+
+<p>YouTube: Khubalo Media</p>
+
+<p>Email: Khubalotv@gmail.com</p>
+
+</section>
+
+<footer>
+
+<p>Khubalo Media</p>
+
+<p>Music • Streaming • Entertainment</p>
+
+<p>© 2026 Khubalo Media</p>
+
+</footer>
+
 </body>
 </html>
