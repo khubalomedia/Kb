@@ -138,3 +138,13 @@ body{
   padding:30px;
   background:#000;
   }
+
+
+  .scroll-row iframe{
+
+    min-width:520px;
+    height:300px;
+    border:none;
+    border-radius:10px;
+    
+    }
