@@ -172,3 +172,68 @@ body{
       }
       
       }
+
+      .videos{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
+        margin-top:30px;
+        }
+        
+        .playlist{
+        width:350px;
+        text-align:center;
+        }
+        
+        .playlist iframe{
+        width:100%;
+        height:200px;
+        border-radius:10px;
+        border:none;
+        }
+
+        .playlist-section{
+          padding:40px 20px;
+          }
+          
+          .scroll-row{
+          display:flex;
+          overflow-x:auto;
+          gap:20px;
+          padding:20px 0;
+          }
+          
+          .scroll-row iframe{
+          min-width:350px;
+          height:200px;
+          border:none;
+          border-radius:10px;
+          }
+          
+          .scroll-row::-webkit-scrollbar{
+          height:8px;
+          }
+          
+          .scroll-row::-webkit-scrollbar-thumb{
+          background:#f5b041;
+          border-radius:10px;
+          }
+
+          .live-tv{
+            text-align:center;
+            padding:40px 20px;
+            background:#111;
+            }
+            
+            .live-player{
+            max-width:900px;
+            margin:auto;
+            }
+            
+            .live-player iframe{
+            width:100%;
+            height:450px;
+            border:none;
+            border-radius:10px;
+            }
