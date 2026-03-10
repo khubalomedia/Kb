@@ -65,20 +65,19 @@ body{
   }
   
   .services{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:60px 20px;
-    flex-wrap:wrap;
-    }
-    
-    .card{
-    background:#1c1c1c;
-    padding:30px;
-    width:280px;
-    text-align:center;
-    border-radius:10px;
-    }
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:60px 20px;
+  }
+  
+  .card{
+  background:#1c1c1c;
+  padding:30px;
+  width:250px;
+  text-align:center;
+  border-radius:10px;
+  }
   
   .card button{
   background:#f5b041;
@@ -139,112 +138,3 @@ body{
   padding:30px;
   background:#000;
   }
-
-  nav ul{
-    display:flex;
-    list-style:none;
-    flex-wrap:wrap;
-    padding:0;
-    }
-    
-    nav ul li{
-    margin:10px;
-    }
-
-    @media (max-width:768px){
-
-      .hero h1{
-      font-size:32px;
-      }
-      
-      .services{
-      flex-direction:column;
-      align-items:center;
-      }
-      
-      header{
-      flex-direction:column;
-      text-align:center;
-      }
-      
-      nav ul{
-      justify-content:center;
-      }
-      
-      }
-
-      .videos{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:30px;
-        margin-top:30px;
-        }
-        
-        .playlist{
-        width:350px;
-        text-align:center;
-        }
-        
-        .playlist iframe{
-        width:100%;
-        height:200px;
-        border-radius:10px;
-        border:none;
-        }
-
-        .playlist-section{
-          padding:40px 20px;
-          }
-          
-          .scroll-row{
-          display:flex;
-          overflow-x:auto;
-          gap:25px;
-          padding:20px 0;
-          }
-          
-          .scroll-row iframe{
-          min-width:420px;
-          height:240px;
-          border:none;
-          border-radius:10px;
-          background:#000;
-          }
-          
-          .scroll-row::-webkit-scrollbar{
-          height:8px;
-          }
-          
-          .scroll-row::-webkit-scrollbar-thumb{
-          background:#f5b041;
-          border-radius:10px;
-          }
-
-
-          .live-tv{
-            text-align:center;
-            padding:40px 20px;
-            background:#111;
-            }
-            
-            .live-player{
-            max-width:900px;
-            margin:auto;
-            }
-            
-            .live-player iframe{
-            width:100%;
-            height:450px;
-            border:none;
-            border-radius:10px;
-            }
-
-            @media (max-width:768px){
-
-              .scroll-row iframe{
-              min-width:320px;
-              height:200px;
-              }
-              
-              }
