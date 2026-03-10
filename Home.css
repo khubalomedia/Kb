@@ -140,3 +140,11 @@ body{
   }
 
 
+  .scroll-row iframe{
+
+    min-width:400px;
+    height:200px;
+    border:none;
+    border-radius:10px;
+    
+    }
