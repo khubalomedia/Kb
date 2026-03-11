@@ -148,3 +148,22 @@ body{
     border-radius:10px;
     
     }
+
+
+    .featured-videos {
+      text-align: center;
+      margin: 40px auto;
+  }
+  
+  .video-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  
+  .video-container iframe {
+      width: 360px;
+      height: 215px;
+      border-radius: 10px;
+  }
